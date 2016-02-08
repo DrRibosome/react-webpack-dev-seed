@@ -1,8 +1,6 @@
 import React from 'react';
 import {Navbar, Nav, NavItem, MenuItem, NavDropdown} from 'react-bootstrap'
 
-import AppNav from './nav.component.jsx'
-
 import 'bootstrap/dist/css/bootstrap.css';
 
 function main() {
@@ -23,6 +21,11 @@ class App extends React.Component {
       </Navbar>
 
       <h1>title here</h1>
+
+      <ul class="list-group">
+        <li class="list-group-item">test</li>
+      </ul>
+
       </div>
     );
   }
