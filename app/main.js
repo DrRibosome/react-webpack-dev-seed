@@ -11,6 +11,21 @@ function main() {
   React.render(<App/>, document.getElementById('app'));
 }
 
+class ProductOffer extends React.Component {
+  render() {
+    return (
+      <ListGroupItem>
+        <Grid>
+          <Row>
+            <Col xs={2}><strong>{this.props.itemName}</strong></Col>
+            <Col>{this.props.stats}</Col>
+          </Row>
+        </Grid>
+      </ListGroupItem>
+    );
+  }
+}
+
 class App extends React.Component {
   render() {
     let navStyle = {borderRadius:"0px"} // remove rounded edges on navbar
@@ -25,16 +40,20 @@ class App extends React.Component {
         </Navbar>
 
         <Grid>
-          <PageHeader>
-            title here
-            <small> smaller text</small>
-          </PageHeader>
+          <Row>
+            <PageHeader>
+              title here
+              <small> smaller text</small>
+            </PageHeader>
+          </Row>
 
+          <Row>
           <ListGroup>
-            <ListGroupItem>Item 1</ListGroupItem>
-            <ListGroupItem>Item 2</ListGroupItem>
-            <ListGroupItem>...</ListGroupItem>
+            <ProductOffer itemName={'item name'} stats={'misc stats'}/>
+            <ProductOffer itemName={'item 2'} stats={'misc stats 2'}/>
+            <ProductOffer itemName={'...'} stats={'...'}/>
           </ListGroup>
+          </Row>
 
         </Grid>
 
