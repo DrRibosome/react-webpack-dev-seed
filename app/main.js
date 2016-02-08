@@ -12,19 +12,19 @@ class App extends React.Component {
     let navStyle = {borderRadius:"0px"} // remove rounded edges on navbar
     return (
       <div className="app">
-      <Navbar inverse style={navStyle}>
-        <Navbar.Header>
-          <Navbar.Brand>
-            <a href="#">React-Bootstrap test</a>
-          </Navbar.Brand>
-        </Navbar.Header>
-      </Navbar>
+        <Navbar inverse style={navStyle}>
+          <Navbar.Header>
+            <Navbar.Brand>
+              <a href="#">React-Bootstrap test</a>
+            </Navbar.Brand>
+          </Navbar.Header>
+        </Navbar>
 
-      <h1>title here</h1>
+        <h1>title here</h1>
 
-      <ul class="list-group">
-        <li class="list-group-item">test</li>
-      </ul>
+        <ul class="list-group">
+          <li class="list-group-item">test</li>
+        </ul>
 
       </div>
     );
