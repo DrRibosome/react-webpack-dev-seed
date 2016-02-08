@@ -1,8 +1,7 @@
 
 # simple es6 react + webpack dev starter
 
-Simple es6 react + webpack dev starter.
-Babel for transpiler, webpack-dev-server for hot reload.
+Simple es6 react + bootstrap + webpack dev starter.
 
 ## install
 
