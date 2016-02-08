@@ -25,7 +25,10 @@ class App extends React.Component {
         </Navbar>
 
         <Grid>
-          <PageHeader>title here</PageHeader>
+          <PageHeader>
+            title here
+            <small> smaller text</small>
+          </PageHeader>
 
           <ListGroup>
             <ListGroupItem>Item 1</ListGroupItem>
