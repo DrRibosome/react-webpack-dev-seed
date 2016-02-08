@@ -1,5 +1,9 @@
 import React from 'react';
-import {Navbar, Nav, NavItem, MenuItem, NavDropdown} from 'react-bootstrap'
+
+import {Navbar, Nav, NavItem, MenuItem, NavDropdown} from 'react-bootstrap';
+import {ListGroup, ListGroupItem} from 'react-bootstrap';
+import {Grid, Row, Col} from 'react-bootstrap';
+import {PageHeader} from 'react-bootstrap';
 
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -20,11 +24,16 @@ class App extends React.Component {
           </Navbar.Header>
         </Navbar>
 
-        <h1>title here</h1>
+        <Grid>
+          <PageHeader>title here</PageHeader>
 
-        <ul class="list-group">
-          <li class="list-group-item">test</li>
-        </ul>
+          <ListGroup>
+            <ListGroupItem>Item 1</ListGroupItem>
+            <ListGroupItem>Item 2</ListGroupItem>
+            <ListGroupItem>...</ListGroupItem>
+          </ListGroup>
+
+        </Grid>
 
       </div>
     );
